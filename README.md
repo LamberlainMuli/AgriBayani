@@ -1,6 +1,30 @@
 # AgriBayani
 AgriBayani is a web-based application that aims to connect investors with farmers to provide them with capital and allow the farmers to scale up. Agribayani attracts investors as it provides a social media platform for investors to connect and update with their borrowers through the platform.
 
+## Installation instructions
+Prerequisits
+- PHP 8.1.7
+- Composer
+- NPM
+- xampp (8.1.7 was used)
+
+1. Clone the repository
+```
+git clone https://github.com/LamberlainMuli/AgriBayani.git
+```
+2. Install dependencies
+```
+composer install
+npm install
+```
+3. Setup database by importing agribayani.sql into phpmyadmin
+
+4. Run local server
+```
+php artisan serve
+```
+5. Open server (by default: http://127.0.0.1:8000) in browser
+
 ## Usage instructions
 AgriBayani provides two distinct account options: (1) Investor and (2) Borrower. Broadly speaking, investors have the opportunity to allocate their capital towards borrowers, who are specifically farmers in the Philippines. Beyond the investment component, the online platform also incorporates a social networking aspect to foster meaningful relationships between investors and borrowers, enabling them to connect in an emotional, social, or advisory capacity.
 
