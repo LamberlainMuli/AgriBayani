@@ -3,9 +3,9 @@ AgriBayani is a web-based application that aims to connect investors with farmer
 
 ## Installation instructions
 Prerequisits
-- PHP 8.1.7
-- Composer
-- NPM
+- PHP (8.1.7 was used)
+- Composer (2.5.5 was used)
+- NPM (9.5.0 was used)
 - xampp (8.1.7 was used)
 
 1. Clone the repository
