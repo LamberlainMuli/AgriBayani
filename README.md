@@ -11,6 +11,7 @@ Prerequisits
 1. Clone the repository
 ```
 git clone https://github.com/LamberlainMuli/AgriBayani.git
+cd AgriBayani
 ```
 2. Install dependencies
 ```
