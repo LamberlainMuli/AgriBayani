@@ -23,17 +23,21 @@ npm install
 5. Start setting up database by going to phpmyadmin (by default http://localhost/phpmyadmin/index.php)
 6. Create new database by clicking new, inputting name, and create
 7. Click newly created database, go to import, and upload agribayani.sql, a sample database (optional)
-8. Edit .env file to match the database name, username, and password.
+8. Create .env (by duplicating and editing .env.example)  to match the database name, username, and password.
 ```
 DB_DATABASE=agribayani
 DB_USERNAME=root
 DB_PASSWORD=
 ```
-9. Run local server
+9. Generate app key
+```
+php artisan key:generate
+```
+10. Run local server
 ```
 php artisan serve
 ```
-10. Open server (by default: http://127.0.0.1:8000) in browser
+11. Open server (by default: http://127.0.0.1:8000) in browser
 
 ## Usage instructions
 AgriBayani provides two distinct account options: (1) Investor and (2) Borrower. Broadly speaking, investors have the opportunity to allocate their capital towards borrowers, who are specifically farmers in the Philippines. Beyond the investment component, the online platform also incorporates a social networking aspect to foster meaningful relationships between investors and borrowers, enabling them to connect in an emotional, social, or advisory capacity.
