@@ -2,9 +2,9 @@
 
 namespace App\Http\Requests;
 
-use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
+use App\Models\Account;
 
 class ProfileUpdateRequest extends FormRequest
 {
@@ -16,13 +16,12 @@ class ProfileUpdateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'email', 'max:255', Rule::unique(User::class)->ignore($this->user()->id)],
-            'first_name' => ['required', 'string', 'max:255'],
-            'last_name' => ['required', 'string', 'max:255'],
+            'email' => ['nullable', 'email', 'max:255', Rule::unique(Account::class)->ignore($this->user()->id)],
+            'first_name' => ['nullable', 'string', 'max:255'],
+            'last_name' => ['nullable', 'string', 'max:255'],
             'picture_url' => ['nullable', 'string'],
-            'phone_number' => ['required', 'regex:/^(\+\d{1,3}[- ]?)?\d{10}$/'],
-            'location' => ['required', 'string', 'max:255'],
+            'phone_number' => ['nullable', 'regex:/^(\+\d{1,3}[- ]?)?\d{10}$/'],
+            'location' => ['nullable', 'string', 'max:255'],
             'goal_amount' => ['nullable', 'integer', 'min:0'],
             'description' => ['nullable', 'string'],
         ];
