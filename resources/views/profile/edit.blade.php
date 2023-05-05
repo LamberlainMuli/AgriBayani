@@ -8,11 +8,10 @@
                     <li class="list-group-item">
                         <h2>Profile Information</h2>
                         <p class="color-secondary">Update your account's profile information and email address.</p>
-
-
-                        <form method="post" action="{{ route('profile.update') }}" class="mt-2 space-y-6">
+                        <form method="POST" action="{{route('profile.update')}}" class="mt-2 space-y-6" enctype="multipart/form-data">
+                            @method('PATCH')
                             @csrf
-                            @method('patch')
+                            
                             <div class="form-group row w-100">
                                 <label for="first_name" class="col-sm-2 col-form-label">First Name</label>
                                 <div class="col-sm-9 p-0">
