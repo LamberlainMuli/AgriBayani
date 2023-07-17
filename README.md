@@ -2,12 +2,18 @@
 AgriBayani is a web-based application that aims to connect investors with farmers to provide them with capital and allow the farmers to scale up. Agribayani attracts investors as it provides a social media platform for investors to connect and update with their borrowers through the platform.
 
 # Preview
-Agribayani is currently hosted on [agribayani.live](https://agribayani.live) using awardspace (for server), name (for .live domain), and cloudflare (for SSL)
+Agribayani is currently hosted on [agribayani.live](https://agribayani.live) using awardspace (for free server), name (for free .live domain), and cloudflare (for free SSL)
 
 Test Accounts:
+
+email:password 
+
 borrower@gmail.com:12345678
+
 borrower2@gmail.com:12345678
+
 lender@gmail.com:12345678
+
 lender2@gmail.com:12345678
 
 ## Installation instructions
